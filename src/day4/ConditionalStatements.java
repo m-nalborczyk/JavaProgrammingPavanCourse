@@ -2,6 +2,15 @@ package day4;
 
 public class ConditionalStatements {
     public static void main(String[] args) {
+
+//        Conditional statements
+//        ----------------
+//        1) if
+//        2) else if
+//        3) nested if else
+//        4) switch case
+
+
         int person_age=12;
 
         //if
