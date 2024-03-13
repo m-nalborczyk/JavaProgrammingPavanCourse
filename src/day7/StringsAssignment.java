@@ -42,6 +42,32 @@ public class StringsAssignment {
 
         //_________________________________________________________
         //2) Check string is palidrome or not
+        String word = "madam";
+        StringBuffer sb2 = new StringBuffer(word);
+        String reversedWord1=sb2.reverse().toString();
+
+        if (word.equals(reversedWord1)){
+            System.out.println("The word is the palindrome");
+        }
+        else {
+            System.out.println("The word is NOT the palindrome");
+        }
+
+        //3) Check string presence in array
+        String word2 = "Welcome in the java course";
+        String searchedWord = "java";
+        System.out.println(word2.contains(searchedWord));
+
+        //4) swap 2 strings
+        String x = "john";
+        String y = "chris";
+        String temp = x;
+        System.out.println("Before swap x is "+x+" and y is " +y);
+        x = y;
+        y = temp;
+        System.out.println("After swap x is "+x+" and y is " +y);
+
+
 
 
 
