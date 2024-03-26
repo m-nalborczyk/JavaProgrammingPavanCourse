@@ -13,7 +13,7 @@ package day12;
 //Methods in interface are public, except with default.
 //Interface supports the functionality of multiple inheritance.
 //We can define interface with interface keyword.
-//A class extends another class, an interface extends another interface but a class implements an interface.
+//A class extends another class, an interface extends another interface but class implements an interface.
 //We can create Object reference for Interface but we cannot instantiate interface.
 
 interface Shape{
@@ -32,20 +32,18 @@ interface Shape{
 
 public class InterfaceDemo implements Shape{
 
-    public void circle(){ //                >in method implementation it is MANDATORY public as you cannot reduce the visibility from interface which is public
+    public void circle(){ //                //in method implementation it is MANDATORY public as you cannot reduce the visibility from interface which is public
         System.out.println("this is circle");
-    }
+    }                                       //first we need to implement abstract methods from interface
     public static void main(String[] args) {
 
-        //Shape shape = new Shape(); incorrect as..
-        //..as you cannot create object of Interface the way we access the members of Interface is by creating the object of the class that implements that interface
+        //Shape shape = new Shape(); incorrect as you cannot create object of Interface the way we access the members of Interface is by creating the object of the class that implements that interface
         InterfaceDemo interfaceDemo = new InterfaceDemo();
-        //however interface variable can hold object of class that implements it
-        Shape shape = new InterfaceDemo();
+        Shape shape = new InterfaceDemo(); //however interface variable can hold object of class that implements it
 
         interfaceDemo.circle();
         interfaceDemo.square();
-        Shape.area(); //                    >static method direct access without object
+        Shape.area();                       //static method direct access without object
 
         shape.circle();
         shape.square();
