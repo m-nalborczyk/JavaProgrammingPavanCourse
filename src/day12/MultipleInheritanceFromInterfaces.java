@@ -7,6 +7,7 @@ interface Xyz{
 interface Abc{
     int abc = 300;
     void m2();
+    void m3();
     }
 
 //this is how we can achieve multiple inheritance - by implementing multiple interfaces (as we cannot extend more than 1 clas)
@@ -14,6 +15,9 @@ interface Abc{
 //eg. public class MultipleInheritanceFromInterfaces extends Gho implements Xyz, Abc {} > Gho would be class and Xyz and Abc interfaces
 public class MultipleInheritanceFromInterfaces implements Xyz, Abc{
 
+//we need to implement all abstract methods from the interface before using main method of the class
+
+    //@Override annotation is to improve code understandability
     @Override
     public void m1() {
         System.out.println("this is m1 from Xyz interface");
@@ -26,9 +30,15 @@ public class MultipleInheritanceFromInterfaces implements Xyz, Abc{
         System.out.println(abc);
     }
 
+    @Override
+    public void m3() {
+        System.out.println("this is m3 from Abc interface");
+    }
+
     public static void main(String[] args) {
         MultipleInheritanceFromInterfaces obj = new MultipleInheritanceFromInterfaces();
         obj.m1();
         obj.m2();
+        obj.m3();
     }
 }
