@@ -1,20 +1,23 @@
 package day14;
+
 //Exception occures when the user provided invalid input to the program.
 //Exception is an event which will cause program termination.
+
 //1) Checked exceptions
 //The exceptions which are identified by java compiler.
-//
-//Ex: Interupted exception
+
+//Ex:
+//Interupted exception
 //FileNotFound
-//		IOException
-//
+//IOException
+
 //2) Un-checked exceptions
 //The exceptions which are not identified by java compiler.
-//		Ex:
+//Ex:
 //ArithmeticExeption
-//		NullPointerException
+//NullPointerException
 //ArrayIndexOutOfBoundsException etc...
-//
+
 //handled in statements block:
 //try..catch block
 //try..catch..finally - finally block is always run no matter if exception has occured or not - useful for cleaning up resources or for instance closing browser session in automation
