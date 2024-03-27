@@ -17,7 +17,7 @@ public class FinallyBlock {
 		}
 		catch(ArithmeticException e)
 		{
-			System.out.println("Exception occured...handled");
+			System.out.println("Exception occured...handled"); //not handled here as it is a NullPointerException
 			
 		}
 		finally
